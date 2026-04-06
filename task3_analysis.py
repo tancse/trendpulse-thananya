@@ -56,7 +56,8 @@ df['is_popular'] = df['score'] > df['score'].mean()
 
 # Save the Result
 
-df.to_csv("./data/trend_analysed.csv")
+df.to_csv("./data/trend_analysed.csv", index=False)
 print("Saved to data/trends_analysed.csv")
+
 
 #print(df.head(5))
