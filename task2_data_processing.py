@@ -39,7 +39,7 @@ df1['title'] = df1['title'].str.strip()
 
 # Save as CSV
 
-df1.to_csv("./data/trend_clean.csv")
+df1.to_csv("./data/trend_clean.csv", index=False)
 print(f"Saved {len(df1)} rows to data/trends_clean.csv\n")
 
 
